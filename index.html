@@ -18,24 +18,50 @@
     <div class="h1 text-center">My Projects</div>
 </div>
     <br>
+<div class="row">
+    <h2 class="text-center">Projects In Progress</h2>
+    <br>
+    <div class="row ">
+        <div class="col-md-4" ng-repeat="project in listOfProjects.projects">
+            <div class="card">
+                <div class="card-header">
+                    {{project.type}}
+                </div>
+                <img class="card-img-top" src="img/angular.jpg" alt="{{alttip}}"/>
+                <div class="card-block">
+                    <h4 class="card-title">{{project.title}}</h4>
 
-<div class="row ">
-    <div class="col-md-4" ng-repeat="project in listOfProjects.projects">
-    <div class="card">
-        <div class="card-header">
-            {{project.type}}
+                    <p class="card-text">{{project.description}}</p>
+                </div>
+            </div>
+
         </div>
-        <img class="card-img-top" src="img/angular.jpg" alt="{{alttip}}"/>
-        <div class="card-block">
-           <h4 class="card-title">{{project.title}}</h4>
-
-            <p class="card-text">{{project.description}}</p>
-        </div>
-    </div>
 
     </div>
-
 </div>
+    <div class="row">
+        <h2>Projects Completed</h2>
+        <br>
+        <div class="row ">
+            <div class="col-md-4" ng-repeat="project in listOfProjects.projects">
+                <div class="card">
+                    <div class="card-header">
+                        {{project.type}}
+                    </div>
+                    <img class="card-img-top" src="img/angular.jpg" alt="{{alttip}}"/>
+                    <div class="card-block">
+                        <h4 class="card-title">{{project.title}}</h4>
+
+                        <p class="card-text">{{project.description}}</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 
 </body>
