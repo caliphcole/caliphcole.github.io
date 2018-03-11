@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f113f306-318e-4fc8-af28-6ed6cad8a94b" name="Default" comment="imgs">
-      <change beforePath="" afterPath="$PROJECT_DIR$/feature/about" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/feature/about.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/feature/contact.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/feature/home/home" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/feature/home/home.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/feature/project/controller.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/feature/project/project.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/node_modules/angular-route/package-lock.json" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/js/angular.js" afterPath="$PROJECT_DIR$/js/angular.js" />
-      <change beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/feature/home/controller.js" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" afterPath="$PROJECT_DIR$/js/bootstrap.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,8 +39,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="156">
+              <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -308,7 +294,7 @@
       <updated>1520672689139</updated>
       <workItem from="1520672693623" duration="3919000" />
       <workItem from="1520677198559" duration="1231000" />
-      <workItem from="1520678468520" duration="21803000" />
+      <workItem from="1520678468520" duration="22070000" />
     </task>
     <task id="LOCAL-00001" summary="adding button to the footer of the card items">
       <created>1520679548717</created>
@@ -356,7 +342,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26953000" />
+    <option name="totallyTimeSpent" value="27220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -547,8 +533,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="156">
+          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
           <folding />
         </state>
       </provider>
