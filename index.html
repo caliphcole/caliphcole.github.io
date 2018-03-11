@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
 
 
 </head>
@@ -15,21 +18,22 @@
     <br>
 <div class="row">
 
-    <div class=" navbar navbar-expand-lg navbar-light bg-light X">
+    <div class=" navbar  navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand">
             <img class=" rounded-circle img-fluid w-25 h-25 col-md-2 px-lg-4 " width="30" height="30" src="img/profilepic.jpg"/>
             Caliph Cole CV
-        <small>Software Developer II</small></a>
-        <div class="navbar-nav ">
+        <small>(Software Developer II)</small></a>
+        <div class="navbar-nav navbar-collapse collapse">
             <a class="nav-item nav-link active " href="#!/home"><img src="img/house.png" class="mx-auto" width="30" height="30"/> Home</a>
             <a class="nav-item nav-link" href="#!/project"><img src="img/project.png" width="30" height="30"/>
                 Project</a>
-            <div class="nav-item nav-link" href="#"><img src="img/about.png" width="30" height="30"/>About</div>
+            <a class="nav-item nav-link" href="#!/about"><img src="img/about.png" width="30" height="30"/>About</a>
             <div class="nav-item nav-link mx-auto" href="#">
                 <img src="img/facebook.png" width="30" height="30"/>
                 LinkedIn
             </div>
             <div class="nav-item nav-link"> <img src="img/contact.png" width="30" height="30"/>Contact</div>
+
 
         </div>
 
@@ -42,7 +46,8 @@
 <script src="js/node_modules/angular-route/angular-route.js"></script>
 <script src="js/config.js"></script>
 <script src="feature/home/controller.js"></script>
-
+    <script src="feature/project/controller.js"></script>
+    <script src="feature/about/controller.js"></script>
 </div>
 </body>
 </html>

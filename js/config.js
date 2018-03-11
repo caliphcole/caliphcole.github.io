@@ -7,13 +7,13 @@ app.config( function($routeProvider){
 
         })
         .when("/project",{
-        templateUrl :"feature/project.html",
+        templateUrl :"feature/project/project.html",
             controller:"project"
     })
     .when("/about",{
-        templateUrl :"feature/about.html"
-    })
-        .when("/contact",{
+        templateUrl :"feature/about/about.html",
+        controller:"about"
+    }).when("/contact",{
                 templateUrl :"feature/contact.html"
 
         }).otherwise({
