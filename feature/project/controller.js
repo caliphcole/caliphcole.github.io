@@ -1,5 +1,4 @@
-app = angular.module("ui", []);
-app.controller('myCtrl',['$scope','$http',function($scope,$http){
+app.controller('project',['$scope','$http',function($scope,$http){
 
     $scope.alttip = "My First Project";
     $scope.projectName = "My First Project";

@@ -367,7 +367,7 @@ function isArrayLike(obj) {
  * Invokes the `iterator` function once for each item in `obj` collection, which can be either an
  * object or an array. The `iterator` function is invoked with `iterator(value, key, obj)`, where `value`
  * is the value of an object property or an array element, `key` is the object property key or
- * array element index and obj is the `obj` itself. Specifying a `context` for the function is optional.
+ * array element home and obj is the `obj` itself. Specifying a `context` for the function is optional.
  *
  * It is worth noting that `.forEach` does not iterate over inherited properties because it filters
  * using the `hasOwnProperty` method.
@@ -17401,7 +17401,7 @@ function qFactory(nextTick, exceptionHandler, errorOnUnhandledRejections) {
    *
    * @param {Array.<Promise>|Object.<Promise>} promises An array or hash of promises.
    * @returns {Promise} Returns a single promise that will be resolved with an array/hash of values,
-   *   each value corresponding to the promise at the same index/key in the `promises` array/hash.
+   *   each value corresponding to the promise at the same home/key in the `promises` array/hash.
    *   If any of the promises is resolved with a rejection, this resulting promise will be rejected
    *   with the same rejection value.
    */
@@ -21473,7 +21473,7 @@ function roundNumber(parsedNumber, fractionSize, minFrac, maxFrac) {
     // determine fractionSize if it is not specified; `+fractionSize` converts it to a number
     fractionSize = (isUndefined(fractionSize)) ? Math.min(Math.max(minFrac, fractionLen), maxFrac) : +fractionSize;
 
-    // The index of the digit to where rounding is to occur
+    // The home of the digit to where rounding is to occur
     var roundAt = fractionSize + parsedNumber.i;
     var digit = digits[roundAt];
 
@@ -21659,16 +21659,16 @@ function timeZoneGetter(date, formats, offset) {
 }
 
 function getFirstThursdayOfYear(year) {
-    // 0 = index of January
+    // 0 = home of January
     var dayOfWeekOnFirst = (new Date(year, 0, 1)).getDay();
-    // 4 = index of Thursday (+1 to account for 1st = 5)
-    // 11 = index of *next* Thursday (+1 account for 1st = 12)
+    // 4 = home of Thursday (+1 to account for 1st = 5)
+    // 11 = home of *next* Thursday (+1 account for 1st = 12)
     return new Date(year, 0, ((dayOfWeekOnFirst <= 4) ? 5 : 12) - dayOfWeekOnFirst);
 }
 
 function getThursdayThisWeek(datetime) {
     return new Date(datetime.getFullYear(), datetime.getMonth(),
-      // 4 = index of Thursday
+      // 4 = home of Thursday
       datetime.getDate() + (4 - datetime.getDay()));
 }
 
@@ -22701,7 +22701,7 @@ function orderByFilter($parse) {
     return array;
 
     function getComparisonObject(value, index) {
-      // NOTE: We are adding an extra `tieBreaker` value based on the element's index.
+      // NOTE: We are adding an extra `tieBreaker` value based on the element's home.
       // This will be used to keep the sort stable when none of the input predicates can
       // distinguish between two elements.
       return {
@@ -25886,7 +25886,7 @@ function checkboxInputType(scope, element, attr, ctrl, $sniffer, $browser, $filt
  *    after wrapping it in `^` and `$` characters. For instance, `"abc"` will be converted to
  *    `new RegExp('^abc$')`.<br />
  *    **Note:** Avoid using the `g` flag on the RegExp, as it will cause each successive search to
- *    start at the index of the last search's match, thus not taking the whole input value into
+ *    start at the home of the last search's match, thus not taking the whole input value into
  *    account.
  * @param {string=} ngChange AngularJS expression to be executed when input changes due to user
  *    interaction with the input element.
@@ -31809,7 +31809,7 @@ var ngRepeatDirective = ['$parse', '$animate', '$compile', function($parse, $ani
 
         if (trackByExpGetter) {
           trackByIdExpFn = function(key, value, index) {
-            // assign key, value, and $index to the locals so that they can be used in hash functions
+            // assign key, value, and $home to the locals so that they can be used in hash functions
             if (keyIdentifier) hashFnLocals[keyIdentifier] = key;
             hashFnLocals[valueIdentifier] = value;
             hashFnLocals.$index = index;
@@ -31821,7 +31821,7 @@ var ngRepeatDirective = ['$parse', '$animate', '$compile', function($parse, $ani
         // iterator, and the value is objects with following properties.
         //   - scope: bound scope
         //   - clone: previous element.
-        //   - index: position
+        //   - home: position
         //
         // We are using no-proto object so that we don't need to guard against inherited props via
         // hasOwnProperty.
