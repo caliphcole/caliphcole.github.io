@@ -1,23 +1,32 @@
 <br>
+<div class="container">
 <div class="row">
-    <h2 class="mx-auto">Projects In Progress</h2>
+    <h2 class="mx-auto">Github Projects</h2>
     <br>
     <div class="row ">
-        <div class="col-md-4" ng-repeat="project in listOfProjects.projects">
+        <div class="col-md-4" ng-repeat="project in listOfProjects">
             <div class="card">
-                <div class="card-header">
-                    {{project.type}}
-                </div>
+               
                 <img class="card-img-top" src="img/angular.jpg" alt="{{alttip}}"/>
-                <div class="card-block">
-                    <h4 class="card-title">{{project.title}}</h4>
+                <div class="card-body">
+                    <h4 class="card-title">{{project.name}}</h4>
 
                     <p class="card-text">{{project.description}}</p>
+                    <div class="text-center">
+                    <a class="btn btn-outline-primary" href="{{project.svn_url}}"> View Code</a>
+                    <a class="btn btn-outline-primary " href="{{project.svn_url}}"> View Website</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="text-left" data-toggle="tooltip" data-placement="top" title="Commits">
+                    <img src="/caliphcole.github.io/img/github.png"/> 2
+                    </div>
+                    
                 </div>
             </div>
-
+ <br/> <br/>
         </div>
-
+       
     </div>
 </div>
 <div class="row">
@@ -67,4 +76,5 @@
 
     </div>
 
+</div>
 </div>

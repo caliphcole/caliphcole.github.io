@@ -6,11 +6,26 @@ app.controller('project',['$scope','$http',function($scope,$http){
 
 
 
-
-    $scope.getListOfProjects = function(){
-        $scope.listOfProjects = {"projects":[{"title":"Mona Social","type":"Android Mobile App","description":" Mobile app for Student at Uwi to" +
-                "Log on and Browse Courses"},{"title":"StarRocket","type":"Android Mobile Gaming App","description":" Mobile game for Anyone"},{"title":"Ui Skills","type":"Boostrap Angularjs Web App","description":"web angular" +
-                "App that displays my Skills"}]};
+    
+    $scope.getAllRepo = function(){
+        $http({
+            'method':'GET',
+            'url':'https://api.github.com/users/caliphcole/repos'
+        }).then(function successCallback(response){
+            $scope.listOfProjects = response.data;
+            console.log($scope.listOfProjects);
+        }, function errorCallback(response){
+            
+        });
+        
     }
-    $scope.getListOfProjects();
+    $scope.getAllRepo();
+
+    // $scope.getListOfProjects = function(){
+    //     $scope.listOfProjects = {"projects":[{"title":"Ui ","type":"Android Mobile App","description":" Mobile app for Student at Uwi to" +
+    //             "Log on and Browse Courses", "url":"https://github.com/caliphcole/uiskills"
+    //     },{"title":"StarRocket","type":"Android Mobile Gaming App","description":" Mobile game for Anyone"},{"title":"Ui Skills","type":"Boostrap Angularjs Web App","description":"web angular" +
+    //             "App that displays my Skills"}]};
+    // }
+    // $scope.getListOfProjects();
 }]);
