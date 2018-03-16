@@ -13,33 +13,45 @@
 
 </head>
 <body class="bg-light" ng-app="resume">
-     <div class=" navbar  navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand">
-            <img class=" rounded-circle img-fluid  col-sm-2 px-lg-4 " src="img/profilepic.jpg"/>
-            Caliph Cole CV
-        <small>(Software Developer II)</small></a>
-        <div class="navbar-nav navbar-collapse collapse">
-            <a class="nav-item nav-link active " href="#!/home">
-                <!--<img src="img/house.png" class="mx-auto" width="30" height="30"/>-->
-                Home</a>
-            <a class="nav-item nav-link" href="#!/project"><!--<img src="img/project.png" width="30" height="30"/>-->
-                Project</a>
-            <a class="nav-item nav-link" href="#!/about">
-                <!--<img src="img/about.png" width="30" height="30"/>-->
-                About</a>
-            <div class="nav-item nav-link mx-auto" href="#">
-                <!--<img src="img/facebook.png" width="30" height="30"/>-->
-                LinkedIn
-            </div>
-            <div class="nav-item nav-link"> 
-            <!--<img src="img/contact.png" width="30" height="30"/>-->
-            Contact
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+      <img class="rounded-circle w-25 h-25" src="/caliphcole.github.io/img/pic.jpg"/>
+      Caliph Cole</a>
+     
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
         </div>
-
-    </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  
 
 <div class="container-fluid bg-white ">
     
@@ -53,8 +65,9 @@
 <script src="js/node_modules/angular-route/angular-route.js"></script>
 <script src="js/config.js"></script>
 <script src="feature/home/controller.js"></script>
-    <script src="feature/project/controller.js"></script>
-    <script src="feature/about/controller.js"></script>
+<script src="feature/project/controller.js"></script>
+<script src="feature/about/controller.js"></script>
+<script type="text/javascript" src="/caliphcole.github.io/js/jquery-3.3.1.min.js"></script>
 </div>
 </body>
 </html>
