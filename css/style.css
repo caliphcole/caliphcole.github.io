@@ -15,6 +15,20 @@
     height:100%;
     z-index:-100;
 }
-bg-nav{
+.bg-nav{
     background-color: transparent;
+}
+.below-video{
+    -webkit-transition: all .3s ease-in-out;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    
+    z-index:100;
+}
+
+.show-block{
+    display:block;
+    
 }
