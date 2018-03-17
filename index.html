@@ -8,58 +8,63 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/timeline.css">
+    <link rel ="stylesheet" href="css/style.css">
    
 
 
 </head>
-<body class="bg-light" ng-app="resume">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">
+<body class="" ng-app="resume">
+<div>  <div class="nav-z-index">
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav ">
+  <a class="navbar-brand text-white" href="#">
       <img class="rounded-circle w-25 h-25" src="img/pic.jpg"/>
       Caliph Cole</a>
      
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon "></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-white" href="#!/home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About Me</a>
+        <a class="nav-link text-white" href="#!/about">About Me</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle text-white"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Projects
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Ui Skills</a>
           <a class="dropdown-item" href="#">Wordpress</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">GitHub</a>
+          <a class="dropdown-item" href="https://github.com/caliphcole/" target="_blank">GitHub</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#">Contact</a>
+        <a class="nav-link text-white " href="#!/contact">Contact</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
   
+</div>
 
-<div class="container-fluid bg-white ">
+	</div>  
+
+<!--<div class="container-fluid bg-white ">-->
     
-<div class="row">
+<!--<div class="row">-->
 
    
-</div>
-<br>
+<!--</div>-->
+<!--<br>-->
 <ng-view></ng-view>
 <script src="js/angular.js"></script>
 <script src="js/node_modules/angular-route/angular-route.js"></script>
@@ -67,7 +72,8 @@
 <script src="feature/home/controller.js"></script>
 <script src="feature/project/controller.js"></script>
 <script src="feature/about/controller.js"></script>
-<script type="text/javascript" src="/caliphcole.github.io/js/jquery-3.3.1.min.js"></script>
-</div>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
