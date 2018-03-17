@@ -32,3 +32,19 @@
     display:block;
     
 }
+.video-view{
+    max-height:none;
+}
+.currently-working-on{
+    position:relative;
+}
+h1{
+    font-size: 100px;
+}
+.icon-play{
+    line-height:100px;
+}
+
+.btn-play{
+    margin: 100px 0 110px;
+}
