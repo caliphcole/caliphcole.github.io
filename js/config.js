@@ -14,8 +14,8 @@ app.config( function($routeProvider){
         templateUrl :"feature/about/about.html",
         controller:"about"
     }).when("/contact",{
-                templateUrl :"feature/contact.html"
-
+                templateUrl :"feature/contact.html",
+                controller:"about"
         }).otherwise({
         redirectTo: "/home"
     });
