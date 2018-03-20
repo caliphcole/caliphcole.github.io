@@ -1,4 +1,4 @@
-app.controller('home',['$scope','$http',function($scope,$http){
+app.controller('home',['$scope','$http','$location',function($scope,$http,$location){
 
     $scope.alttip = "My First Project";
     $scope.projectName = "My First Project";
@@ -13,4 +13,9 @@ app.controller('home',['$scope','$http',function($scope,$http){
                 "App that displays my Skills"}]};
     }
     $scope.getListOfProjects();
+    
+    $scope.searchResult = function(){
+        
+        $location.path('#!/search');
+    }
 }]);
